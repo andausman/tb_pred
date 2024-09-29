@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuberculosis Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        
+        <h1>Tuberculosis Prediction</h1>
+        <p>Fill the form below to get diagnosed</p>
+        <form action="/predict" method="POST">
+            <label>Have you been feeling feverish?</label>
+            <select name="has_fever">
+                <option value="" disabled selected>Select an option</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label>Are you coughing blood?</label>
+            <select name="has_coughing_blood">
+                <option value="" disabled selected>Select an option</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label>Is your spit mixed with blood?</label>
+            <select name="has_sputum_blood">
+                <option value="" disabled selected>Select an option</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label>Are you sweating profusely?</label>
+            <select name="has_night_sweats">
+                <option value="" disabled selected>Select an option</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label>Are you feeling Chest pain?</label>
+            <select name="has_chest_pain">
+                <option value="" disabled selected>Select an option</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label>Are you having back pain?</label>
+            <select name="has_back_pain">
+                <option value="" disabled selected>Select an option</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label>Are you having shortness of breath?</label>
+            <select name="has_shortness_of_breath">
+                <option value="" disabled selected>Select an option</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label>Did you experience weight loss recently?</label>
+            <select name="has_weight_loss">
+                <option value="" disabled selected>Select an option</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label>Do you always feel tired?</label>
+            <select name="has_body_fatigue">
+                <option value="" disabled selected>Select an option</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label>Do you have any lump around your neck or throat?</label>
+            <select name="has_lumps">
+                <option value="" disabled selected>Select an option</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label>Have you been coughing for the past two weeks?</label>
+            <select name="has_continuous_cough">
+                <option value="" disabled selected>Select an option</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label>Is your lymph swollen?</label>
+            <select name="has_swollen_lymph_nodes">
+                <option value="" disabled selected>Select an option</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label>Do you have appetite?</label>
+            <select name="has_loss_of_appetite">
+                <option value="" disabled selected>Select an option</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <button type="submit">PREDICT</button>
+        </form>
+    </div>
+</body>
+</html>
