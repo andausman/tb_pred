@@ -21,7 +21,7 @@ This project is a **Tuberculosis (TB) prediction system** that uses machine lear
 1. Clone the repository:
    ```bash
    git clone [repository-url]
-   cd tb-prediction-system
+   cd tb_pred
    ```
 2. Install the required dependencies:
    ```bash
@@ -29,7 +29,7 @@ This project is a **Tuberculosis (TB) prediction system** that uses machine lear
    ```
 3. Run the script to train the model and make predictions:
    ```bash
-   python tb_prediction.py
+   python tbpred.py
    ```
 
 ## Future Improvements
